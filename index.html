@@ -1,0 +1,279 @@
+<html lang="en">
+<head>
+    <title>Game On</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    	
+    <!-- Stylesheets -->
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    <link rel="stylesheet" href="index.css">
+	
+	 <!-- FontAwesome -->
+	 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!-- Google Fonts -->
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Staatliches&display=swap" rel="stylesheet">
+  
+</head>
+
+<body>
+
+	<!-- Navbar section -->
+	<header class="navbar-section">
+		    
+		<a class="site-logo" href="index.html">
+			<img src="img/logo.png" alt="logo">
+		</a>
+
+		<nav class="main-menu">
+			<ul class= "navbar-list">
+				<li><a class="navbar-items" href="#home">Home</a></li>
+				<li><a class="navbar-items" href="#reviews">Reviews</a></li>
+				<li><a class="navbar-items" href="#news">News</a></li>
+				<li><a class="navbar-items" href="#about">About Us</a></li>
+				<li><a class="navbar-items" href="#contact">Contact</a></li>
+			</ul>
+		</nav>
+
+    <div class="user-panel">
+			<a href="./login.html">Login</a>  /  <a href="./register.html">Register</a>
+		</div>	
+		
+	</header>
+	<!-- Navbar section end -->
+
+
+	<!-- Cover section -->	
+	<div class = "cover_container" id="home">                  
+		<img src="./img/cover2.jpg" alt="coverImage">
+		<div class="cover_text"> 
+			<h1>Game On!</h1>  
+		</div>      
+		
+		<div class="cover_subtext"> 
+			<h2>THE GLOBAL AUTHORITY ON VIDEO GAMES</h2>  
+		</div>
+	</div>
+	<!-- Cover section end -->                       
+
+
+	<!-- Carousel section -->        
+  <div class = "container-carousel" id = "home">  
+
+	<div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+    </div>
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="./img/slider-1.jpg" class="d-block w-100" alt="slider1">
+          <div class="carousel-caption d-none d-md-block">
+            <h5>The Elder Scrolls V: Skyrim</h5>
+            <p>Winner of more than 200 Game of the Year Awards, The Elder Scrolls V: Skyrim, the epic fantasy from Bethesda Game Studios.</p>
+          </div>
+      </div>
+      <div class="carousel-item">
+            <img src="./img/slider-2.jpg" class="d-block w-100" alt="slider2">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Starcraft II</h5>
+              <p>Wage war across the galaxy with three unique and powerful races. StarCraft II is a real-time strategy game from Blizzard Entertainment.</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="./img/slider-3.jpg" class="d-block w-100" alt="fallout">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Fallout 3</h5>
+              <p>Vault-Tec engineers have worked around the clock on a reproduction of Wasteland life for you to enjoy from the comfort of your own vault.</p>
+            </div>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </div>
+
+	<!-- Carousel section end -->
+
+
+    <!-- Review section -->
+	<section class="review-section spad set-bg" id = "reviews">
+		<div class="container">
+			<div class="section-title">
+				<div class="new">new</div>
+				<h2>Recent Reviews</h2>
+			</div>
+			<div class="row">
+				<div class="col-lg-3 col-md-6">
+					<div class="review-item">
+						<div class="review-cover set-bg">
+							<div class="score yellow">9.3</div>                            
+                <img src="./img/1.jpg" alt="img1">
+						</div>
+						<div class="review-text">                            
+							<h5>GTA V</h5>
+							<p>Lorem ipsum dolor sit amet, consectetur adipisc ing ipsum dolor sit ame.</p>
+						</div>
+					</div>
+				</div>
+
+				<div class="col-lg-3 col-md-6">
+					<div class="review-item">
+						<div class="review-cover set-bg">
+							<div class="score purple">9.5</div>
+                <img src="./img/2.jpg" alt="img2">
+						</div>
+						<div class="review-text">
+							<h5>Red Dead Redemption II</h5>
+							<p>Lorem ipsum dolor sit amet, consectetur adipisc ing ipsum dolor sit ame.</p>
+						</div>
+					</div>
+				</div>
+
+				<div class="col-lg-3 col-md-6">
+					<div class="review-item">
+						<div class="review-cover set-bg">
+							<div class="score green">9.1</div>
+                <img src="./img/3.jpg" alt="img3">
+						</div>
+						<div class="review-text">
+							<h5>The Outer Worlds</h5>
+							<p>Lorem ipsum dolor sit amet, consectetur adipisc ing ipsum dolor sit ame.</p>
+						</div>
+					</div>
+				</div>
+
+				<div class="col-lg-3 col-md-6">
+					<div class="review-item">
+						<div class="review-cover set-bg">
+							<div class="score pink">9.7</div>
+                <img src="./img/4.jpg" alt="img4">
+						</div>
+						<div class="review-text">
+							<h5>The Witcher III</h5>
+							<p>Lorem ipsum dolor sit amet, consectetur adipisc ing ipsum dolor sit ame.</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- Review section end -->
+
+
+
+<!-- Contact section -->
+<section class="contact" id="contact">
+
+  <div class="contact-container">
+    <h4 class="contact-title">Contact us</h4>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores, culpa quo exercitationem quae deleniti saepe dolorem eum pariatur adipisci reiciendis esse eius, nesciunt dolorum et, at numquam quod recusandae quia..</p>
+        
+    <div class="contact-info">
+      <ul class="contact-info-list">
+        <li><div class="cf-left">Address</div><div class="cf-right">742 Evergreen Terrace</div></li>
+        <li><div class="cf-left">Phone</div><div class="cf-right">+54 9 261 1234567</div></li>
+        <li><div class="cf-left">E-mail</div><div class="cf-right">game_on@videogames.com</div></li>
+      </ul>
+    </div>
+  </div>
+            
+  <div class="contact-form">
+    <h4 class="form-title">Leave a Reply</h4>
+         
+    <form class ="form" id="contact_form" action="">                  
+      <fieldset>
+        <input class ="input" placeholder="Name" type="text">
+      </fieldset>
+            
+      <fieldset>
+        <input class ="input" placeholder="Email" type="email">
+      </fieldset>
+            
+      <fieldset>
+        <input class ="input" placeholder="Subject" type="text">
+      </fieldset>                              
+                 
+      <fieldset>
+        <textarea class ="text" placeholder="Message" ></textarea>
+      </fieldset>
+                 
+      <fieldset>
+        <button class="site-btn btn-sm" name="send" type="submit" id="contact-submit">Send</button>
+      </fieldset>                        
+    </form>                     
+  </div>
+</section>
+<!-- Contact section end -->
+
+
+	<!-- footer -->
+  <footer class="site-footer" id = "about">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-12 col-md-6">
+          <h6>About us</h6>
+          <p class="text-justify">Game On ! is the global authority on Video games. We’ve been covering gaming for more than 20 years, and continue that legacy today with worldwide print editions and around-the-clock news, features, esports coverage, hardware testing and game reviews on GameOn.com, as well as major yearly events including the E3 Gaming Show. 
+				Keep up with us on Twitter, Facebook, YouTube, Instagram and Twitch. You can also subscribe to our podcast on Spotify. </p>
+        </div>
+  
+        <div class="col-xs-6 col-md-3">
+          <h6>Quick Links</h6>
+          <ul class="footer-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#reviews">Reviews</a></li>
+            <li><a href="#news">News</a></li>
+            <li><a href="#contact">Contact Us</a></li>              
+          </ul>
+        </div>
+  
+        <div class="col-xs-6 col-md-3">
+          <h6>Policy</h6>
+          <ul class="footer-links">       
+            <li><a href="">FAQ</a></li>
+            <li><a href="">Cookies policy</a></li>
+            <li><a href="">Privacy policy</a></li>
+            <li><a href="">Terms and conditions</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+        
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6 col-sm-6 col-xs-12">
+          <p class="copyright-text">Copyright &copy; 2021 All Rights Reserved by 
+            <a href= "https://www.linkedin.com/in/roberto-baca"  target="_blank">Rober Baca</a>.
+          </p>
+        </div>
+  
+        <div class="col-md-6 col-sm-6 col-xs-12">
+          <ul class="social-icons">
+            <li><a class="facebook" href="#"><i class="fa fa-facebook"></i></a></li>
+				    <li><a class="youtube" href="#"><i class="fa fa-youtube"></i></a></li>
+            <li><a class="twitter" href="#"><i class="fa fa-twitter"></i></a></li>
+            <li><a class="instragram" href="#"><i class="fa fa-instagram"></i></a></li>
+            <li><a class="twitch" href="#"><i class="fa fa-twitch"></i></a></li>   
+				    <li><a class="spotify" href="#"><i class="fa fa-spotify"></i></a></li>   
+          </ul>
+        </div>
+      </div>
+    </div>
+  </footer>    
+  <!-- footer section end -->
+    
+</body>
+
+<!--====== Bootstrap JavaScript plugin and dependency ======-->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
+
+</html>

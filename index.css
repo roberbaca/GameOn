@@ -1,0 +1,1205 @@
+html,
+body {
+	height: 100%;    
+  background-image: url("./img/pattern.png");     
+  background-repeat: repeat;     
+} 
+
+h3,
+h4,
+h5,
+h6 {
+	margin: 0;
+	font-weight: bold;
+	color: #131313;
+}
+
+h3 {
+	font-size: 4vh;
+}
+
+h4 {
+	font-size: 3vh;
+}
+
+h5 {
+	font-size: 3vh;
+}
+
+h6 {
+	font-size: 2vh;
+}
+
+p {
+	font-size: 2.5vh;
+	color: #878787;
+	line-height: 2;
+}
+
+img {
+	max-width: 100%;
+}
+
+input:focus,
+select:focus,
+button:focus,
+textarea:focus {
+	outline: none;
+}
+
+a:hover,
+a:focus {
+	text-decoration: none;
+	outline: none;
+}
+
+ul{
+	padding: 0;
+	margin: 0;
+}
+
+
+@font-face 
+{
+  font-family: 'myFont'; 
+  src: url(./fonts/Staatliches-Regular.ttf); 
+}
+
+
+/*------------------
+  	Navbar section
+---------------------*/
+
+.navbar-section{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;   
+  width: 100%;
+	background: #131313;
+	padding: 1.5vh 0;
+	border-bottom: 0.8vh solid #ffb320;   
+}
+
+.site-logo{
+  align-content: flex-start;
+	padding-top: 2vh;
+  width: 10vh;
+}
+
+.user-panel{	
+	font-weight: bold;
+	background: #ffb320;
+	padding: 2vh 5vh;
+	border-radius: 5vh;  
+  display: flex;
+  align-items: flex-end;      
+}
+
+.user-panel a{
+	font-size: 2.5vh;
+	color: #131313;
+  text-decoration: none;   
+}
+
+.main-menu{
+	margin-right: 20vh;
+  display: flex;
+  align-items: flex-start;      
+}
+
+.main-menu ul{
+	list-style: none;
+}
+
+.main-menu ul li{
+	display: inline;      
+}
+
+.main-menu ul li a{
+	font-size: 3vh;
+	color: #fff;
+	margin-left: 10vh;
+	font-weight: bold;
+	padding: 5vh 0.1vh;
+  text-decoration: none;  
+}
+
+.main-menu ul li a:hover{
+	color: #ffb320;
+}
+
+
+/* Pantallas grandes (desktops de menos de 1200px) */
+@media (max-width: 1199.98px){
+
+  .navbar-section{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .main-menu{
+    margin-right: 0%;
+    width: 70%; 
+    font-size: 1vh;  
+  }
+
+  .main-menu ul{
+    padding: 0%;
+    margin: 0%;
+    justify-content: center;
+    font-size: 1vh;  
+  }
+
+  .main-menu a{ 
+   
+    margin: 0%;
+    font-size: 1vh;  
+  }
+
+  .main-menu li{
+    font-size: 1vh;  
+  }
+
+  .user-panel{
+    margin-right: 2%;
+    align-items: center;
+    justify-content: center;
+    width: 10%;
+    padding: 1.8vh 8vh;
+	  border-radius: 3.5vh;   
+  }
+
+  .user-panel a{
+    font-size: 2vh;
+  }
+
+  .site-logo{
+    width: 12vh;
+    margin: 0%;
+    margin-left: 5%;  
+  }
+
+}
+
+/* Pantallas medianas (tablets y laptops de menos de 1024px) */
+@media (max-width: 1024px){
+  
+  .navbar-section{
+    display: flex;
+    justify-content: center;
+    align-items: center;       
+    padding: 1vh;    
+  }
+  
+  .site-logo{    
+    padding-top: 1vh;
+    width: 7%;
+    margin-left: 1%;
+  }
+  
+  .user-panel{	    
+    padding: 1vh 8vh;
+    border-radius: 5vh;  
+    display: flex;
+    align-items: center;    
+    width: 15%;  
+  }
+  
+  .user-panel a{
+    font-size: 2vh;      
+  }
+  
+  .main-menu{
+    margin-right: 0%;
+    margin-left: 2%;   
+    width: 58%;         
+  } 
+  
+  .main-menu ul li a{
+    font-size: 3vh;
+    margin-left: 0%;  
+    margin-right: 0%;  
+    padding: 1vh 1vh;    
+  }
+}
+
+/* Pantallas pequeñas (smartphones en landscape de menos de 768px) */
+@media (max-width: 768px){
+
+  .navbar-section{
+    display: flex;
+    justify-content: center;
+    align-items: center;       
+    padding: 1vh;    
+  }
+  
+  .site-logo{    
+    padding-top: 1vh;
+    width: 10vh;
+    margin-left: 1%;
+  }
+  
+  .user-panel{	    
+    padding: 1vh 8vh;
+    border-radius: 5vh;  
+    display: flex;
+    align-items: center;    
+    width: 15%;  
+  }
+  
+  .user-panel a{
+    font-size: 2vh;      
+  }
+  
+  .main-menu{
+    margin-right: 0%;
+    margin-left: 2%;   
+    width: 58%;         
+  } 
+
+  
+  .main-menu ul li a{
+    font-size: 2vh;
+    margin-left: 0%;  
+    margin-right: 0%;  
+    padding: 1vh 1vh;    
+  }  
+  
+}
+
+/* Pantallas muy pequeñas (smartphones en portrait de menos de 576px) */
+@media (max-width: 575.98px){
+  
+  .navbar-section{
+    font-size: 0.5vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .main-menu{
+    margin-right: 0%;
+    width: 90%;
+  }
+
+  .main-menu ul{
+    width: 100%;
+    padding: 0%;
+    margin: 0%;
+    justify-content: center;
+  }
+
+  .main-menu a{ 
+    font-size: 0.5vh;
+    margin: 0%;
+  }
+
+  .user-panel {
+    margin-right: 2%;
+    align-items: center;
+    justify-content: center;
+    width: 15%;
+    padding: 1vh 6vh;
+	  border-radius: 1.5vh;   
+  }
+
+  .user-panel a{
+    font-size: 1.5vh;
+  }
+
+  .site-logo{
+    width: 9vh;
+    margin: 0%;
+    margin-left: 5%;  
+  }
+}
+
+
+
+/*------------------
+  	Cover section
+---------------------*/
+
+.cover_container{
+  position: relative;
+  text-align: center;
+  border-bottom: 0.8vh solid #ffb320; 
+}
+
+.cover_container img{
+  width: 100%;
+	height: 100%;
+  padding: 0%;	
+	object-fit: fill;
+  filter: blur(4px); 
+}
+
+.cover_container h1{
+  position: absolute;   
+  margin: 0 auto;
+  left: 0;
+  right: 0;
+  top: 25%;
+  text-align: center;
+  width: 80%;   
+  font-size: 30vh;
+  color: #ffb320;
+  z-index: 1; 
+  font-family: 'myFont';
+  text-shadow: 2vh 2vh 1vh black;   
+}
+
+.cover_container h2{
+  position: absolute;   
+  margin: 0 auto;
+  left: 0;
+  right: 0;
+  top: 53%;
+  text-align: center;
+  width: 80%;   
+  font-size: 6.7vh;
+  color: white;
+  z-index: 1; 
+	font-family: 'myFont'; 
+  text-shadow: 2vh 2vh 1vh black;
+}
+
+
+/* Pantallas grandes (desktops de menos de 1200px) */
+@media (max-width: 1199.98px){
+  .cover_container h1{
+    font-size: 20vh;
+  }
+
+  .cover_container h2{
+    font-size: 4.5vh;
+    top: 65%;
+  }
+
+  .cover_container img{
+    height: 50%;
+  }
+}
+
+/* Pantallas medianas (tablets y laptops de menos de 1024px) */
+@media (max-width: 1023.98px){
+  .cover_container h1{
+    font-size: 15vh;
+  }
+
+  .cover_container h2{
+    font-size: 3.4vh;
+    top: 65%;
+  }
+
+  .cover_container img{
+    height: 40%;
+  }
+}
+
+/* Pantallas pequeñas (smartphones en landscape de menos de 768px) */
+@media (max-width: 768px){
+  .cover_container h1{
+    font-size: 15vh;
+  }
+
+  .cover_container h2{
+    font-size: 3.4vh;
+    top: 65%;
+  }
+
+  .cover_container img{
+    height: 40%;
+  }
+}
+
+/* Pantallas muy pequeñas (smartphones en portrait de menos de 576px) */
+@media (max-width: 576px){
+  .cover_container h1{
+    font-size: 10vh;
+  }
+
+  .cover_container h2{
+    font-size: 2.3vh;
+    top: 65%;
+  }
+
+  .cover_container img{
+    height: 30%;
+  }
+}
+
+
+/*------------------
+  Carousel Section
+---------------------*/
+
+.container-carousel{
+  	margin-top: 5%; 
+    margin-bottom: 5%; 
+    width: 70%;
+    margin-left: 15%;    
+}
+
+.container-carousel h5{
+    font-size: 50px;
+    color: #ffb320;
+}
+
+.container-carousel p{
+    font-size: 1.7vh;
+    color: white;
+}
+
+
+
+/*----------------------
+  	  Review Section
+------------------------*/
+
+.section-title {
+	text-align: center;
+	margin-bottom: 5%;
+}
+
+.section-title h2 {
+	padding-top: 2%;
+	font-size: 8vh;
+}
+
+.spad {
+	padding-top: 97px;
+	padding-bottom: 97px;
+}
+
+.new {
+	display: inline-block;
+	text-transform: uppercase;
+	font-size: 3vh;
+	font-weight: bold;
+	color: #fff;
+	padding: 6px 25px;
+  background: #ff205f;
+}
+
+
+.review-section {
+	background-position: right top;
+  background-color: white;
+}
+
+
+.review-item .review-cover {
+	position: relative;
+	margin-bottom: 2%;
+	height: 50%;
+}
+
+.review-item .review-cover .score {
+	position: absolute;
+	width: 54px;
+	height: 54px;
+	top: -27px;
+	left: 26px;
+	padding-top: 15px;
+	font-size: 3vh;
+	font-weight: bold;
+	color: #fff;
+	text-align: center;
+	border-radius: 50%;
+	z-index: 1;
+}
+
+.review-item .review-cover .score.yellow {
+	background: #ffb320;
+}
+
+.review-item .review-cover .score.purple {
+	background: #694eae;
+}
+
+.review-item .review-cover .score.pink {
+	background: #ff20ae;
+}
+
+.review-item .review-cover .score.green {
+	background: #4eae60;
+}
+
+.review-item .review-text{
+	text-align: center;
+}
+
+.review-item .review-text h5{
+  margin-top: 100px;
+	margin-bottom: 20px;
+}
+
+.review-item .review-text p{
+  margin-top: 10px;
+	margin-bottom: 0;
+}
+
+
+/* Pantallas muy pequeñas (smartphones en portrait de menos de 576px) */
+@media (max-width: 575.98px){
+
+  html, body {
+    max-width: 100%;
+    overflow-x: hidden;
+  }
+
+  .section-title {
+	  text-align: center;
+	  margin-bottom: 10%;
+  }
+
+  .section-title h2 {
+	  font-size: 5vh;
+    margin-bottom: 20%;    
+  }
+
+  .review-text{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .review-text h5{
+    padding: 0%;
+    margin-bottom: 5%;
+    display: flex;
+  }
+
+  .review-section img{
+    margin-bottom: 5%;
+    width: 85%;
+  }
+
+  .review-section{
+    display: flex;
+    flex-direction: column;
+  }
+
+}
+
+
+
+
+/*-----------------
+      Contact 
+--------------------*/
+
+.contact{
+  display: flex;
+}
+
+.contact-container{
+  width: 50%;
+  margin-left: 5%;
+  margin-top: 5%;
+}
+
+.contact-container h4{
+  color: white;
+}
+
+.contact-form{
+  width: 50%;
+  margin-left: 5%;
+  margin-top: 5%;
+}
+
+.contact-form h4{
+  color: white;
+}
+
+.form{
+  margin-top: 2%;
+}
+
+.input{
+  margin-top: 2%;
+  width: 80%;
+}
+
+.text{
+  margin-top: 2%;
+  height: 30%;
+  width: 80%;
+}
+
+.contact button{
+  margin-top: 2%;
+  margin-left: 25%;
+}
+
+.contact-title{
+  margin-bottom: 2%;
+}
+
+
+.contact-info-list {
+	padding-top: 25px;
+	padding-bottom: 35px;
+	list-style: none;
+}
+
+.contact-info-list li {
+	margin-bottom: 30px;
+}
+
+.contact-info-list .cf-left {
+	width: 95px;
+	float: left;
+	font-size: 16px;
+	font-weight: 700;
+	color: #ffb320;
+}
+
+.contact-info-list .cf-right {
+	color: #878787;
+	font-size: 15px;
+	padding-left: 100px;
+}
+
+.site-btn.btn-sm {
+	padding: 10px 30px;
+	min-width: 163px;
+}
+
+.site-btn {
+	display: inline-block;
+	text-align: center;
+	font-size: 15px;
+	color: #131313;
+	padding: 16px 30px;
+	min-width: 153px;
+	border-radius: 50px;
+	font-weight: 500;
+	border: none;
+	background: #ffb320;
+	cursor: pointer;
+}
+
+
+.site-btn:hover {
+	background: #131313;
+  color:  #ffb320;
+}
+
+
+/* Pantallas muy pequeñas (smartphones en portrait de menos de 576px) */
+@media (max-width: 575.98px){
+  .site-btn {
+    font-size: 2vh;
+    border-radius: 3vh;   
+  }
+
+  .site-btn.btn-sm {
+    margin-top: 10%;
+    margin-bottom: 20%;
+    margin-left: 20%;
+  }
+
+  .contact-container{
+    width: 100%;
+    margin-top: 5%;
+  }
+  
+  .contact-form{
+    width: 100%;
+    margin-top: 5%;
+  }
+
+  .contact{
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+
+
+
+/*----------------------
+  		  Footer 
+------------------------*/
+
+.site-footer{
+  background-color:#26272b;
+  padding:2% 0 1%;
+  font-size:2.5vh;
+  line-height:4vh;
+  color:#737373;
+  border-top: 0.8vh solid #ffb320; 
+}
+
+.site-footer h6{
+  color:#fff;
+  font-size:3vh;
+  text-transform:uppercase;
+  margin-top:2%;
+  margin-bottom:2vh;
+  letter-spacing:0.2vh;
+}
+
+.site-footer a{
+  color:#737373;
+}
+
+.site-footer a:hover{
+  color:#3366cc;
+  text-decoration:none;
+}
+
+.container{
+  margin-left: 5%;
+  margin-right: 5%;
+}
+
+.footer-links{
+  padding-left:0%;
+  list-style:none;
+}
+
+.footer-links li{
+  display:block;
+}
+
+.footer-links a{
+  color:#737373;
+}
+
+.footer-links a:active,.footer-links a:focus,.footer-links a:hover{
+  color:#3366cc;
+  text-decoration:none;
+}
+
+.footer-links.inline li{
+  display:inline-block;
+}
+
+.site-footer .social-icons{
+  text-align:right;
+}
+
+.site-footer .social-icons a{
+  width:6vh;
+  height:6vh;
+  line-height:6vh;
+  margin: left 2vh;
+  margin: right 0%;;
+  border-radius:100%;
+  background-color:#33353d;
+}
+
+.copyright-text{
+  margin:0%;
+}
+
+.social-icons{
+  padding-left:0%;
+  margin-bottom:0%;
+  list-style:none;
+}
+
+.social-icons li{
+  display:inline-block;
+  margin-bottom:2vh;
+}
+
+
+.social-icons a{
+  background-color:#eceeef;
+  color:#818a91;
+  font-size:3.5vh;
+  display:inline-block;
+  line-height:6vh;
+  width:6vh;
+  height:6vh;
+  padding: 0%;
+  text-align:center;  
+  margin-right:2vh;
+  border-radius:100%;
+  
+  -webkit-transition:all .2s linear;
+  -o-transition:all .2s linear;
+  transition:all .2s linear;
+}
+
+
+.social-icons i{
+	margin-top: 1.2vh;
+}
+
+.social-icons a:active,.social-icons a:focus,.social-icons a:hover{
+  color:#fff;
+  background-color:#29aafe;
+}
+
+.social-icons a.facebook:hover{
+  background-color:#3b5998;
+}
+
+.social-icons a.youtube:hover{
+  background-color:ff0000;
+}
+
+.social-icons a.twitter:hover{
+  background-color:#00aced;
+}
+
+.social-icons a.instragram:hover{
+  background-color:c13584;
+}
+
+.social-icons a.twitch:hover{
+  background-color:9146ff;
+}
+
+.social-icons a.spotify:hover{
+  background-color:1db954;
+}
+
+
+/* Pantallas grandes (desktops de menos de 1200px) */
+@media (max-width: 1199.98px){
+  
+}
+
+/* Pantallas medianas (tablets y laptops de menos de 1024px) */
+@media (max-width: 1024px){
+  .site-footer h6{
+    font-size:2vh;
+    margin-top:2%;
+    margin-bottom:2vh;
+    letter-spacing:0.2vh;
+  } 
+
+  .site-footer p{
+    font-size: 2vh;
+  }
+
+  .site-footer .social-icons a{
+    padding:0%;
+    font-size: 3vh;     
+    margin-right:0%;   
+    margin-left: 0%; 
+    width:6vh;
+    height:6vh;
+    line-height:6vh;  
+  }
+}
+
+/* Pantallas pequeñas (smartphones en landscape de menos de 768px) */
+@media (max-width: 768px){
+  .site-footer{
+    padding-bottom:0;   
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .site-footer .copyright-text,.site-footer .social-icons{
+    text-align:center;
+  }  
+
+  .site-footer p{
+    font-size: 2vh;
+  }
+
+  .copyright-text p{
+    font-size: 0.5vh;
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+  }
+
+  .footer-links{
+    margin-top: 5%;
+    margin-bottom: 5%;
+  }
+
+  .social-icons{
+    margin-top: 0%;
+  }
+
+  .site-footer .social-icons a{
+    padding:0%;
+    font-size: 3vh;     
+    margin-right:0%;   
+    margin-left: 0%; 
+    width:5vh;
+    height:5vh;
+    line-height:5vh;  
+  }
+
+}
+
+/* Pantallas muy pequeñas (smartphones en portrait de menos de 576px) */
+@media (max-width: 575.98px){  
+  .copyright-text{
+    font-size: 2vh;
+    margin-top: 10%;
+    margin-bottom: 10%;
+  }
+  
+  .footer-links{
+    margin-top: 5%;
+    margin-bottom: 5%;
+  }
+
+  .social-icons{
+    margin-top: 0%;
+  }
+
+  .social-icons a{
+    padding:0%;
+    font-size: 3.5vh;    
+    margin-right:1vh;   
+    margin-left: 45%; 
+  }
+}
+
+
+
+
+/*----------------------
+  		    Login 
+------------------------*/
+
+.login-box{
+  width: 100%;
+  height: 100%;
+  margin: 0%;
+  padding: 0%;
+  display: flex;
+  justify-content: center;
+  font-family: 'Roboto', sans-serif;
+  color: grey;
+} 
+
+.login-background{
+  background-color: black;
+  margin-top: 2.5%;
+  height: 90%;
+  width: 25%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 1vh;  
+}
+
+.img{
+  margin-top: 50%;
+  margin-bottom: 20%;
+  width: 15vh;
+}
+
+.img:hover{
+  cursor: pointer;
+}
+  
+.title{
+  font-family: 'Roboto', sans-serif;
+  color: #ffb320;
+  font-size: 3vh;
+  margin-bottom: 10%;
+}
+  
+.input_mail{
+  color:rgb(225,225,223);
+  background-color: transparent;
+  border-color: rgb(225, 225, 223);
+  border-bottom-color: rgb(225, 225, 223);
+  border-top-right-radius: 1vh;
+  border-top-left-radius: 1vh;
+  height: 9vh;
+  width: 44vh;
+  font-size: 2vh;  
+}
+  
+.links{
+  color: white;  
+}
+
+.RememberMe{
+  font-size: 1.9vh;  
+  margin-bottom: 5%;  
+}
+
+.checkbox-label{
+  margin-right: 10px;
+}
+
+.account{
+  margin-top: 2vh;
+  font-size: 2vh;
+}
+ 
+.signButton{
+  margin-top: 30px;
+}
+
+
+
+
+/*----------------------
+  		  Register 
+------------------------*/
+
+.register-background{
+  background-color: black;
+  margin-top: 2.5%;
+  height: 90%;
+  width: 25%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 1vh;  
+}
+
+.input_display{
+  color:rgb(225,225,223);
+  background-color: transparent;
+  border-color: rgb(225, 225, 223);
+  border-bottom-color: rgb(225, 225, 223);
+  border-top-right-radius: 1vh;
+  border-top-left-radius: 1vh;
+  height: 9vh;
+  width: 44vh;
+  font-size: 2vh;  
+}
+
+.input_email{
+  color:rgb(225,225,223);
+  background-color: transparent;
+  border-color: rgb(225, 225, 223);
+  border-bottom-color: rgb(225, 225, 223);
+  height: 9vh;
+  width: 44vh;
+  font-size: 2vh;  
+}
+  
+  
+.input_pass{
+  color: rgb(225,225,223);
+  background-color: transparent;
+  border-color: rgb(225,225,223);
+  border-top: none;
+  border-bottom-right-radius: 1vh;
+  border-bottom-left-radius: 1vh;
+  height: 9vh;
+  width: 44vh;
+  font-size: 2vh;
+  margin-bottom: 20px;
+  box-shadow: none; 
+}
+   
+.newsletter{
+  font-size: 1.9vh; 
+  margin-bottom: 5%; 
+  float: left;
+}
+
+.termsOfService{
+  font-size: 1.9vh;  
+  margin-bottom: 5%;  
+  float: left;
+}
+
+.checkboxes{
+  margin-left: 10%;
+}
+
+.checkbox-label{
+  margin-right: 10px;
+}
+
+ 
+.registerButton{
+  margin-top: 1vh;
+}
+
+
+/* Pantallas grandes (desktops de menos de 1200px) */
+@media (max-width: 1199.98px){
+  .login-background{
+    width: 80%;
+    height: 80%;
+    margin-top: 10%;
+  }
+
+  .register-background{
+    width: 80%;
+    height: 80%;
+    margin-top: 10%;
+  }
+
+  .title{
+    font-size: 3vh;
+  }
+}
+
+/* Pantallas medianas (tablets y laptops de menos de 1024px) */
+@media (max-width: 1024px){
+  .login-background{
+    width: 80%;
+    height: 80%;
+    margin-top: 15%;
+  }
+
+  .register-background{
+    width: 80%;
+    height: 85%;
+    margin-top: 5%;
+  }
+
+  .title{
+    font-size: 2.2vh;
+  }
+}
+
+/* Pantallas pequeñas (smartphones en landscape de menos de 768px) */
+@media (max-width: 768px){
+  .login-background{
+    width: 100%;
+    height: 80%;
+    margin-top: 15%;
+  }
+
+  .register-background{
+    width: 100%;
+    height: 85%;
+    margin-top: 15%;
+  }
+}
+
+/* Pantallas muy pequeñas (smartphones en portrait de menos de 576px) */
+@media (max-width: 575.98px){
+  .login-background{
+    width: 100%;
+    height: 80%;
+    margin-top: 15%;
+  }
+
+  .register-background{
+    width: 90%;
+    height: 85%;
+    margin-top: 15%;
+  }
+
+  .input_display, 
+  .input_email,
+  .input_mail,
+  .input_pass{
+    height: 6vh;
+    width: 30vh;
+    font-size: 2vh;
+  }
+
+  .img{
+    width: 12vh;
+  }
+}
+
+
